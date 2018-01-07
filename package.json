@@ -1,0 +1,26 @@
+{
+  "name": "heroku-websockets-purescript",
+  "version": "0.0.1",
+  "description": "heroku-websockets-purescript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "uws": "^9.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "pulp test",
+    "build:sv": "pulp build -O --to index.js",
+    "build": "npm run-script build:sv",
+    "heroku-prebuild": "npm install -g bower purescript pulp && bower install && npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenpieters/heroku-websockets-purescript.git"
+  },
+  "author": "rubenpieters",
+  "homepage": "https://github.com/rubenpieters/heroku-websockets-purescript#readme"
+}
